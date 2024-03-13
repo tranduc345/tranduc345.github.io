@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create product list with CSS3</title>
+        <style type="text/css">
+            .StudentDetails { display: none;}
+            .Student img {
+                width: 150px; 
+                height: 150px; 
+                border-radius: 20px; 
+                box-shadow: 5px 5px 10px #aaa; 
+            }
+            .StudentName { font-weight: bold;}
+            .StudentPrice { font-size: italic;}
+            .StudentPrice::before { content: "-";}
+            .Student { text-align: center; width: 150px; margin: 0px 20px; float:left; cursor: pointer;}
+            .Student:hover .StudentDetails { display: block;}
+            body { margin-left: 23%;}
+
+        </style>
+    </head>
+    <body>
+       <div>
+            <div class="Student">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU13s3B9ebCEv3iuC-uqZN4qjyXIHHj-IYqQ&s" />
+            <div class="StudentDetails">
+                <span class="StudentName">Trần Minh Đức</span>
+                <span class="StudentPrice">23070223</span>
+            </div>
+            </div>
+
+            <div class="Student">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSppEHPMtouYU8t-4LAD_iQT3TKVzoEG9BnyA&usqp=CAU" />
+            <div class="StudentDetails">
+                <span class="StudentName">Nguyễn Việt Hà</span>
+                <span class="StudentPrice">23070375</span>
+            </div>
+            </div>
+
+            <div class="Student">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBsjFDh_CcxiWWQQgKoxwUvka_Xl1SvEKyNdDK_YC9sluZ9l2zCKdZIb8gswcy0jpnJk&usqp=CAU" />
+            <div class="StudentDetails">
+                <span class="StudentName">Đỗ Lê Huyền Trang</span>
+                <span class="StudentPrice">23070003</span>
+            </div>
+            </div>
+
+            <div class="Student">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzn0ieBhxWFrJobs3_ljaETI_7ltNWdd1L0bYX0F6w_mlIHQJ0bGldLumoahjOhulz3w&usqp=CAU" />
+            <div class="StudentDetails">
+                <span class="StudentName">Trần Hà Anh</span>
+                <span class="StudentPrice">23070526</span>
+            </div>
+            </div>
+       </div>
+    </body>
+</html>
